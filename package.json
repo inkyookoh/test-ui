@@ -4,8 +4,14 @@
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
-  "repository": "https://github.com/inkyookoh/test-ui",
-  "author": "tata <tata8407@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkyookoh/test-ui.git"
+  },
+  "author": {
+    "name": "tata",
+    "email": "tata8407@gmail.com"
+  },
   "license": "MIT",
   "private": false,
   "devDependencies": {
@@ -64,6 +70,13 @@
     "build-storybook": "build-storybook",
     "prebuild": "shx rm -rf ./dist",
     "build": "rollup -c",
-    "postbuild": "shx rm -rf ./dist/dist"
-  }
+    "postbuild": "shx rm -rf ./dist/dist",
+    "chromatic": "npx chromatic --project-token=d79c62090a23"
+  },
+  "bugs": {
+    "url": "https://github.com/inkyookoh/test-ui/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/inkyookoh/test-ui#readme",
+  "_id": "@innovaid/dentlink-ui@1.1.2"
 }
